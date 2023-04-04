@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React, { Fragment, useEffect, useState } from "react";
+import Carousel from "@/components/carousel";
+
 
 
 
@@ -93,11 +95,11 @@ const Header = () => {
               {userToken ? (
                 <div>
                   {" "}
-                  <Menu as="div" className="relative inline-block text-left">
+                  <menu as="div" className="relative inline-block text-left">
                     <div>
-                      <Menu.Button className="md:ml-2  items-center bg-white border border-gray-200 shadow py-1 md:py-2 px-3 focus:outline-none hover:bg-indigo-400 hover:text-white hover:font-bold rounded text-base mt-4 md:mt-0 uppercase">
+                      <menu.Button className="md:ml-2  items-center bg-white border border-gray-200 shadow py-1 md:py-2 px-3 focus:outline-none hover:bg-indigo-400 hover:text-white hover:font-bold rounded text-base mt-4 md:mt-0 uppercase">
                         Options
-                      </Menu.Button>
+                      </menu.Button>
                     </div>
 
                     <Transition
@@ -146,7 +148,7 @@ const Header = () => {
                         </div>
                       </Menu.Items>
                     </Transition>
-                  </Menu>
+                  </menu>
                 </div>
               ) : (
                 <div>
@@ -166,7 +168,12 @@ const Header = () => {
           </div>
         </div>
       </nav>
+
+      <Carousel></Carousel>
     </Fragment>
+
+    
+    
   );
 };
 
